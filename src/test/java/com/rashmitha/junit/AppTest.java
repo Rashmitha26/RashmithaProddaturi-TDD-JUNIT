@@ -27,24 +27,24 @@ public class AppTest
 	}
 	
 	@Test
-	public void Test1A()
+	public void TestAtIndex0()
 	{
 		assertEquals("BCD",remove.remove("ABCD"));
 	}
 	@Test
-	public void TestA()
+	public void TestAtIndex1()
 	{
 		assertEquals("BCD",remove.remove("BACD"));
 	}
 	
 	@Test
-	public void Test2A()
+	public void TestFirst2A()
 	{
 		assertEquals("BC",remove.remove("AABC"));
 	}
 	
 	@Test
-	public void AafterIndex2()
+	public void AafterIndex1()
 	{
 		assertEquals("BCDADA",remove.remove("BCDADA"));
 	}
