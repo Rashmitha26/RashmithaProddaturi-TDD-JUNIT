@@ -1,14 +1,18 @@
 package com.rashmitha.junit;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 
 public class AppTest 
 {
-	public RemoveAs remove=new RemoveAs();
-	
+	public RemoveAs remove;
+	@BeforeEach
+	public void init()
+	{
+		remove=new RemoveAs();
+	}
 	
 	@Test
 	public void Test0Char()
